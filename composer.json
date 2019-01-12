@@ -1,0 +1,36 @@
+{
+  "name": "dcsg/php-immutable-collections",
+  "type": "library",
+  "description": "Minimalist and Typed Immutable Collections",
+  "keywords": [
+    "collection",
+    "immutable",
+    "immutable-collection",
+    "pipe"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Gomes",
+      "email": "danielcesargomes@gmail.com",
+      "homepage": "https://dcsg.me"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "DCSG\\ImmutableCollections\\": "src",
+      "Test\\DCSG\\ImmutableCollections\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": [
+      "./vendor/bin/phpunit"
+    ]
+  }
+}
