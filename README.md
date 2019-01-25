@@ -41,6 +41,12 @@ This way you have the possibility to use them and extend it's behavior tailored 
 
 #### Basic usage
 
+##### Installation
+
+```bash
+composer require dcsg/php-immutable-collections
+```
+
 ###### Creating a Typed List Collection
 
 ```php
