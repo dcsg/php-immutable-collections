@@ -1,5 +1,5 @@
 # Minimalist and Typed Immutable Collections for PHP
-[![Build Status](https://travis-ci.org/dcsg/php-immutable-collections.svg?branch=master)](https://travis-ci.org/dcsg/php-immutable-collections)
+[![Build Status](https://travis-ci.org/dcsg/php-immutable-collections.svg?branch=master)](https://travis-ci.org/dcsg/php-immutable-collections) [![SymfonyInsight](https://insight.symfony.com/projects/159123de-9d05-4af3-a650-6e8ea7aadaea/mini.svg)](https://insight.symfony.com/projects/159123de-9d05-4af3-a650-6e8ea7aadaea)
 
 A library that provides a set of minimalist, typed and piped Immutable Collections for PHP.
 
