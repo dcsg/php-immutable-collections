@@ -9,6 +9,10 @@ php:
 
 matrix:
 
+env:
+  global:
+    - DEFAULT_COMPOSER_FLAGS="--no-interaction --no-ansi --no-progress --no-suggest"
+
 before_script:
   - composer install
 
@@ -17,4 +21,5 @@ addons:
     organization: "dcsg-github"
 
 script:
+  - vendor/bin/phpunit --coverage-clover=coverage.xml
   - sonar-scanner
