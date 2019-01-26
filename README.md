@@ -1,7 +1,17 @@
 # Minimalist and Typed Immutable Collections for PHP
-[![Build Status](https://travis-ci.org/dcsg/php-immutable-collections.svg?branch=master)](https://travis-ci.org/dcsg/php-immutable-collections) [![SymfonyInsight](https://insight.symfony.com/projects/159123de-9d05-4af3-a650-6e8ea7aadaea/mini.svg)](https://insight.symfony.com/projects/159123de-9d05-4af3-a650-6e8ea7aadaea)
+[![Build Status](https://travis-ci.org/dcsg/php-immutable-collections.svg?branch=master)](https://travis-ci.org/dcsg/php-immutable-collections) [![SymfonyInsight](https://insight.symfony.com/projects/8cc27627-24e7-407c-9839-766c9946eb2c/mini.svg)](https://insight.symfony.com/projects/8cc27627-24e7-407c-9839-766c9946eb2c)
 
 A library that provides a set of minimalist, typed and piped Immutable Collections for PHP.
+
+###### Requirements
+
+PHP > 7.1
+
+###### Installation
+
+```bash
+composer require dcsg/php-immutable-collections
+```
 
 #### What Problems does this solve?
 
@@ -41,12 +51,6 @@ This way you have the possibility to use them and extend it's behavior tailored 
 * Util methods like `isEmpty`, `count`, `toArray`, `contains`, `get` ,`map`, `filter`, `slice`, `merge`, `reverse`, `reduce`, `first`, `last`, `head`, `tail`.
 
 #### Basic usage
-
-##### Installation
-
-```bash
-composer require dcsg/php-immutable-collections
-```
 
 ###### Creating a Typed List Collection
 
