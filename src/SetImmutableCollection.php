@@ -7,7 +7,7 @@ use InvalidArgumentException;
 /**
  * @author Daniel Gomes <danielcesargomes@gmail.com>
  */
-abstract class SetCollection extends Collection
+abstract class SetImmutableCollection extends ImmutableCollection
 {
     protected function __construct(array $elements)
     {

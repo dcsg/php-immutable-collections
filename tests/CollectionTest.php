@@ -3,7 +3,7 @@
 namespace Tests\DCSG\ImmutableCollections;
 
 use InvalidArgumentException;
-use DCSG\ImmutableCollections\Collection;
+use DCSG\ImmutableCollections\ImmutableCollection;
 use DCSG\ImmutableCollections\NotFoundException;
 use PHPUnit\Framework\TestCase;
 
@@ -197,7 +197,7 @@ final class CollectionTest extends TestCase
 
 }
 
-final class StringCollection extends Collection
+final class StringCollection extends ImmutableCollection
 {
     protected function validateItems(array $elements): void
     {
