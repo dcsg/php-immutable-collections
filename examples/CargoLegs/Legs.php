@@ -3,7 +3,7 @@
 namespace Examples\DCSG\ImmutableCollections\CargoLegs;
 
 use InvalidArgumentException;
-use DCSG\ImmutableCollections\Collection;
+use DCSG\ImmutableCollections\ImmutableCollection;
 
 /**
  * @method Leg first()
@@ -11,7 +11,7 @@ use DCSG\ImmutableCollections\Collection;
  * @method Leg head()
  * @method Leg[] getIterator(): CollectionIterator
  */
-final class Legs extends Collection
+final class Legs extends ImmutableCollection
 {
     public function from(string $location): Legs
     {

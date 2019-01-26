@@ -3,7 +3,7 @@
 namespace Examples\DCSG\ImmutableCollections\Invoices;
 
 use InvalidArgumentException;
-use DCSG\ImmutableCollections\Collection;
+use DCSG\ImmutableCollections\ImmutableCollection;
 
 /**
  * @method InvoiceItem first()
@@ -11,7 +11,7 @@ use DCSG\ImmutableCollections\Collection;
  * @method InvoiceItem head()
  * @method InvoiceItem[] getIterator(): CollectionIterator
  */
-final class InvoiceItems extends Collection
+final class InvoiceItems extends ImmutableCollection
 {
     public function totalIncludingVAT(): float
     {

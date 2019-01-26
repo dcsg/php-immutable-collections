@@ -3,7 +3,7 @@
 namespace Tests\DCSG\ImmutableCollections;
 
 use InvalidArgumentException;
-use DCSG\ImmutableCollections\SetCollection;
+use DCSG\ImmutableCollections\SetImmutableCollection;
 use PHPUnit\Framework\TestCase;
 
 final class SetCollectionTest extends TestCase
@@ -20,7 +20,7 @@ final class SetCollectionTest extends TestCase
     }
 }
 
-final class StringSetCollection extends SetCollection
+final class StringSetCollection extends SetImmutableCollection
 {
     protected function validateItems(array $elements): void
     {

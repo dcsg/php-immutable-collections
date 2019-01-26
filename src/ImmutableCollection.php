@@ -7,7 +7,7 @@ use Closure;
 /**
  * @author Daniel Gomes <danielcesargomes@gmail.com>
  */
-abstract class Collection implements CollectionInterface
+abstract class ImmutableCollection implements CollectionInterface
 {
     /** @var array */
     protected $elements;

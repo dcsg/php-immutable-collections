@@ -3,7 +3,7 @@
 namespace Examples\DCSG\ImmutableCollections\Invoices;
 
 use InvalidArgumentException;
-use DCSG\ImmutableCollections\SetCollection;
+use DCSG\ImmutableCollections\SetImmutableCollection;
 
 /**
  * @method Invoice first()
@@ -11,7 +11,7 @@ use DCSG\ImmutableCollections\SetCollection;
  * @method Invoice head()
  * @method Invoice[] getIterator(): CollectionIterator
  */
-final class Invoices extends SetCollection
+final class Invoices extends SetImmutableCollection
 {
     public function totalExcludingVAT()
     {

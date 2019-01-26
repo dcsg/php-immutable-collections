@@ -57,10 +57,10 @@ This way you have the possibility to use them and extend it's behavior tailored 
 ```php
 <?php
 
-use DCSG\ImmutableCollections\Collection;
+use DCSG\ImmutableCollections\ImmutableCollection;
 
-final class MyStringCollection extends Collection {
-    // We have to override the `validateItems` in order to ensure the right Type for the Collection.
+final class MyStringCollection extends ImmutableCollection {
+    ImmutableCollection
     protected function validateItems(array $elements): void
     {
         foreach ($elements as $element) {
@@ -80,10 +80,10 @@ echo $collection->count(); // 2
 ```php
 <?php
 
-use DCSG\ImmutableCollections\SetCollection;
+use DCSG\ImmutableCollections\SetImmutableCollection;
 
-final class MyStringSetCollection extends SetCollection {
-    // We have to override the `validateItems` in order to ensure the right Type for the Collection.
+final class MyStringSetCollection extends SetImmutableCollection {
+    ImmutableCollection
     protected function validateItems(array $elements): void
     {
         foreach ($elements as $element) {
