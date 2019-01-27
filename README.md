@@ -74,7 +74,6 @@ This way you have the possibility to use them and extend it's behavior tailored 
 use DCSG\ImmutableCollections\ImmutableCollection;
 
 final class MyStringCollection extends ImmutableCollection {
-    ImmutableCollection
     protected function validateItems(array $elements): void
     {
         foreach ($elements as $element) {
@@ -87,6 +86,7 @@ final class MyStringCollection extends ImmutableCollection {
 
 $collection = MyStringCollection::create(['foo', 'bar']);
 echo $collection->count(); // 2
+$slicedCollection = $collection->slice(0, 1); // MyStringCollection { $elements=['foo']}
 ```
 
 ###### Creating a Typed Set Collection
@@ -97,7 +97,6 @@ echo $collection->count(); // 2
 use DCSG\ImmutableCollections\SetImmutableCollection;
 
 final class MyStringSetCollection extends SetImmutableCollection {
-    ImmutableCollection
     protected function validateItems(array $elements): void
     {
         foreach ($elements as $element) {
@@ -110,6 +109,7 @@ final class MyStringSetCollection extends SetImmutableCollection {
 
 $collection = MyStringSetCollection::create(['foo', 'bar']);
 echo $collection->count(); // 2
+$slicedCollection = $collection->tail(); // MyStringSetCollection { $elements=['bar']}
 
 $collection = MyStringSetCollection::create(['foo', 'bar', 'foo']); // Throws InvalidArgumentException
 ```
