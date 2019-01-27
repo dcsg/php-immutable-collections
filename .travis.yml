@@ -5,11 +5,6 @@ language: php
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
-## Cache composer
-cache:
-  directories:
-    - $HOME/.composer/cache
-
 php:
   - 7.1
   - 7.2
@@ -17,8 +12,12 @@ php:
 
 matrix:
 
+env:
+  global:
+    - DEFAULT_COMPOSER_FLAGS="--no-interaction --no-ansi --no-progress --no-suggest"
+
 before_script:
-  - travis_retry composer update --prefer-stable --prefer-lowest --no-interaction --prefer-dist
+  - composer install
 
 addons:
   sonarcloud:
