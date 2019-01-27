@@ -59,7 +59,7 @@ This way you have the possibility to use them and extend it's behavior tailored 
 ###### Creating a Typed List Collection
 
 ```php
-<?php
+<?php declare(strict_types=1);
 
 use DCSG\ImmutableCollections\ImmutableCollection;
 
@@ -82,7 +82,7 @@ echo $collection->count(); // 2
 ###### Creating a Typed Set Collection
 
 ```php
-<?php
+<?php declare(strict_types=1);
 
 use DCSG\ImmutableCollections\SetImmutableCollection;
 
