@@ -3,6 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/dcsg/php-immutable-collections/v/stable)](https://packagist.org/packages/dcsg/php-immutable-collections)
 [![License](https://poser.pugx.org/dcsg/php-immutable-collections/license)](https://packagist.org/packages/dcsg/php-immutable-collections)
 [![Build Status](https://travis-ci.org/dcsg/php-immutable-collections.svg?branch=master)](https://travis-ci.org/dcsg/php-immutable-collections)
+[![StyleCI](https://github.styleci.io/repos/165499278/shield?branch=master)](https://github.styleci.io/repos/165499278)
 [![SymfonyInsight](https://insight.symfony.com/projects/8cc27627-24e7-407c-9839-766c9946eb2c/mini.svg)](https://insight.symfony.com/projects/8cc27627-24e7-407c-9839-766c9946eb2c)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=dcsg_php-immutable-collections&metric=alert_status)](https://sonarcloud.io/dashboard?id=dcsg_php-immutable-collections)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=dcsg_php-immutable-collections&metric=coverage)](https://sonarcloud.io/dashboard?id=dcsg_php-immutable-collections)
