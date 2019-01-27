@@ -15,8 +15,12 @@ composer require dcsg/php-immutable-collections
 
 #### What Problems does this solve?
 
-* Immutable List Collection
-* Immutable Set Collection
+The lack of Generics in PHP does not allow to have typed collections in PHP.
+
+This Library provides two abstract Immutable Collections:
+
+* Immutable List Collection - ImmutableCollection
+* Immutable Set Collection - SetImmutableCollection
 
 #### Why Typed Immutable Collections
 
