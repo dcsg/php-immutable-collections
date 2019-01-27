@@ -5,6 +5,11 @@ language: php
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
+## Cache composer
+cache:
+  directories:
+    - $HOME/.composer/cache
+
 php:
   - 7.1
   - 7.2
