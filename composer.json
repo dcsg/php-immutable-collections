@@ -34,8 +34,8 @@
     }
   },
   "scripts": {
-    "test": [
-      "./vendor/bin/phpunit"
-    ]
+    "test": "./vendor/bin/phpunit",
+    "check-style": "./vendor/bin/phpcs src tests",
+    "fix-style": "./vendor/bin/phpcbf src tests"
   }
 }
