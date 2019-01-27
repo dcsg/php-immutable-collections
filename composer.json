@@ -25,7 +25,11 @@
   },
   "autoload": {
     "psr-4": {
-      "DCSG\\ImmutableCollections\\": "src",
+      "DCSG\\ImmutableCollections\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
       "Tests\\DCSG\\ImmutableCollections\\": "tests"
     }
   },
