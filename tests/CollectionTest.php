@@ -194,7 +194,6 @@ final class CollectionTest extends TestCase
             return $total . $value;
         }));
     }
-
 }
 
 final class StringCollection extends ImmutableCollection
