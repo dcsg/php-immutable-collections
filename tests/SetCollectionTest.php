@@ -1,4 +1,5 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types=1); // phpcs:disable PSR1.Classes.ClassDeclaration.MultipleClasses
+
 
 namespace Tests\DCSG\ImmutableCollections;
 
