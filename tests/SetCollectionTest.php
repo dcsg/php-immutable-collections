@@ -1,4 +1,4 @@
-<?php /** @noinspection PhpMultipleClassesDeclarationsInOneFile */
+<?php declare(strict_types=1);
 
 namespace Tests\DCSG\ImmutableCollections;
 
