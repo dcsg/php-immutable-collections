@@ -186,13 +186,24 @@ final class CollectionTest extends TestCase
         $collection->get('invalid');
     }
 
-    public function testReduce()
+    public function testReduce(): void
     {
         $collection = StringCollection::create(['foo', 'bar']);
 
         $this->assertEquals('foobar', $collection->reduce(function (?string $total, $value) {
             return $total . $value;
         }));
+    }
+
+    public function testMergeIsTypeSafe(): void
+    {
+        $this->assertInstanceOf(
+            StringCollection::class,
+            StringCollection::create(['foo'])->merge(StringCollection::create(['bar']))
+        );
+
+        $this->expectException(InvalidArgumentException::class);
+        StringCollection::create(['foo'])->merge(IntegerCollection::create([1]));
     }
 }
 
@@ -201,7 +212,19 @@ final class StringCollection extends ImmutableCollection
     protected function validateItems(array $elements): void
     {
         foreach ($elements as $item) {
-            if (!is_string($item)) {
+            if (!\is_string($item)) {
+                throw new InvalidArgumentException('Invalid value');
+            }
+        }
+    }
+}
+
+final class IntegerCollection extends ImmutableCollection
+{
+    protected function validateItems(array $elements): void
+    {
+        foreach ($elements as $item) {
+            if (!\is_int($item)) {
                 throw new InvalidArgumentException('Invalid value');
             }
         }
