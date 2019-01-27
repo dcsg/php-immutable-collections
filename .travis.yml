@@ -1,6 +1,9 @@
+dist: trusty
 language: php
 
-dist: trusty
+# This triggers builds to run on the new TravisCI infrastructure.
+# See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+sudo: false
 
 php:
   - 7.1
@@ -11,15 +14,18 @@ matrix:
 
 env:
   global:
-    - DEFAULT_COMPOSER_FLAGS="--no-interaction --no-ansi --no-progress --no-suggest"
+    - COMPOSER_FLAGS="--prefer-stable --prefer-lowest"
 
 before_script:
-  - composer install
+  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
 
 addons:
   sonarcloud:
     organization: "dcsg-github"
 
 script:
+  - vendor/bin/phpcs --standard=psr2 src/
   - vendor/bin/phpunit --coverage-clover=/tmp/coverage.xml --log-junit=/tmp/test-results.xml
+
+after_script:
   - sonar-scanner
