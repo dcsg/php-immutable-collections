@@ -119,3 +119,33 @@ $collection = MyStringSetCollection::create(['foo', 'bar', 'foo']); // Throws In
 ## Examples
 
 We provide two simple examples for better understanding. One related to [invoices](https://github.com/dcsg/php-immutable-collections/blob/master/examples/Invoices/app.php) and another one regarding [Legs of a Cargo Ship](https://github.com/dcsg/php-immutable-collections/blob/master/examples/CargoLegs/app.php).
+
+## Change log
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Testing
+
+```bash
+$ composer test
+```
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE OF CONDUCT](CODE_OF_CONDUCT.md) for details.
+
+## Security
+
+If you discover any security related issues, please email hi@dcsg.me instead of using the issue tracker.
+
+## Credits
+
+- [Daniel Gomes][link-author]
+- [All Contributors][link-contributors]
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[link-author]: https://github.com/dcsg
+[link-contributors]: ../../contributors
