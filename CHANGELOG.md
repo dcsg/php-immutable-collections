@@ -21,6 +21,20 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Security
 - Nothing
 
+## 2.0.0 - 2019-03-10
+
+### Added
+- PHP 7.2
+- PHP Unit 8
+
+### Deprecated
+- PHP 7.1
+
+## 1.1.2 - 2019-03-10
+
+### Fixed
+- Change `in_array` to `\in_array`
+
 ## 1.1.1 - 2019-01-27
 
 ### Added
