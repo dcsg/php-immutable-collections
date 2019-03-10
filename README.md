@@ -1,5 +1,6 @@
 # Minimalist and Typed Immutable Collections for PHP
 
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D7.1-blue.svg)](https://php.net/)
 [![Latest Stable Version](https://poser.pugx.org/dcsg/php-immutable-collections/v/stable)](https://packagist.org/packages/dcsg/php-immutable-collections)
 [![License](https://poser.pugx.org/dcsg/php-immutable-collections/license)](https://packagist.org/packages/dcsg/php-immutable-collections)
 [![Build Status](https://travis-ci.org/dcsg/php-immutable-collections.svg?branch=master)](https://travis-ci.org/dcsg/php-immutable-collections)
