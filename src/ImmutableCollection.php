@@ -166,6 +166,7 @@ abstract class ImmutableCollection implements CollectionInterface
     public function get($element)
     {
         if ($this->contains($element)) {
+            /** @var int|string $key The index, it cannot be false since it checks if it exists */
             $key = \array_search($element, $this->getElements(), true);
 
             return $this->getElements()[$key];
