@@ -13,7 +13,7 @@ abstract class SetImmutableCollection extends ImmutableCollection
     {
         $_elements = [];
         foreach ($elements as $element) {
-            if (in_array($element, $_elements, true)) {
+            if (\in_array($element, $_elements, true)) {
                 throw new InvalidArgumentException('Duplicated element found.');
             }
 
