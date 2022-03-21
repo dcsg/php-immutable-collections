@@ -63,8 +63,5 @@ jobs:
               if: "matrix.experimental == false"
               run: "composer config platform --unset && composer update ${{ env.COMPOSER_FLAGS }}"
 
-            - name: "Initialize PHPUnit sources"
-              run: "vendor/bin/simple-phpunit --filter NO_TEST_JUST_AUTOLOAD_THANKS"
-
             - name: "Run PHPUnit"
               run: "composer phpunit"
